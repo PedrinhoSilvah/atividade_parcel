@@ -1,0 +1,125 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #e15f41;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: #e15f41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+      color: #fff;
+      font-size: 28px;
+      font-family: Pacifico, cursive;
+    }
+}
+.head{
+    background-image: url('../images/slide1.png');
+    text-align: center;
+    color: rgb(230, 230, 153);
+    position: relative;
+   
+    .container{
+     position: relative;
+      span{
+        font-size: 28px;
+      }
+
+   
+
+      }
+      .infos{
+        margin-top: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        ul{
+            font-size: 24px;
+           display: flex;
+            gap: 50px;
+            li{
+                list-style: none;
+            }
+        }
+      }
+      &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        content:'';
+        opacity: .4;
+    }
+
+    @media (max-width: 767px) {
+      .container{
+        span{
+          font-size: 24px;
+        }
+      }
+      .infos{
+        
+        ul{
+         font-size: 20px;
+        }
+      }
+    }
+  } 
+
+.sobre{
+  margin: 50px 40px;
+
+&-restaurante{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+
+  img{
+    width: 500px;
+  }
+  
+  p{
+    padding: 30px;
+  }
+}
+
+
+.right{
+  flex-direction: row-reverse;
+}
+@media (max-width: 767px){
+  &-restaurante{
+    flex-direction: column;
+    padding-top: 20px;
+
+    img{
+      width: 350px;
+    }
+   p{
+    padding: 10px 0;
+   }
+  }
+  .right{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1280px){
+  &-restaurante{
+    margin-top: 50px;
+    img{
+      width: 400px;
+    }
+
+  }
+}
+}
